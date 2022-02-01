@@ -9,13 +9,13 @@ Be creative and use multiple parameters from the API documentation to earn a top
 ## Directions URL
 
 ```
-https://maps.googleapis.com/maps/api/directions/json?origin=place_id:ChIJw41iuB311YkREso8L-O3FfM&destination=place_id:ChIJ7TLxxjb_Lk0R-Iych7jVjWY&waypoints=place_id:ChIJKdlP2Pu8KogRHNWlrr2rbxk%7Cplace_id:ChIJfxc7Sre7Lk0RoOAk9nn7s30&avoid=tolls&mode=driving&alternatives=true&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
+https://maps.googleapis.com/maps/api/directions/json?origin=place_id:ChIJw41iuB311YkREso8L-O3FfM&destination=place_id:ChIJr3SaNOCqL00RhhE3HlUPyA0&waypoints=place_id:ChIJKdlP2Pu8KogRHNWlrr2rbxk%7Cplace_id:ChIJfxc7Sre7Lk0RoOAk9nn7s30&avoid=tolls&mode=driving&alternatives=true&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
 
 ```
 ## PlaceId's on Google Maps
 ```
 https://www.google.com/maps/place/?q=place_id:ChIJw41iuB311YkREso8L-O3FfM
-https://www.google.com/maps/place/?q=place_id:ChIJ7TLxxjb_Lk0R-Iych7jVjWY
+https://www.google.com/maps/place/?q=place_id:ChIJr3SaNOCqL00RhhE3HlUPyA0
 
 https://www.google.com/maps/place/?q=place_id:ChIJKdlP2Pu8KogRHNWlrr2rbxk
 https://www.google.com/maps/place/?q=place_id:ChIJfxc7Sre7Lk0RoOAk9nn7s30
