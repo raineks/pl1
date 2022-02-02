@@ -19,7 +19,7 @@
     </style>
     <script>
         let map;
-
+        // map funciton
         function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: 51.128, lng: -1.241 },
@@ -27,6 +27,7 @@
             mapTypeId: 'satellite',
         });
 
+        // start historic site makers 
         const BCmarker = new google.maps.Marker({
         position: { lat: 51.002, lng: 0.543 },
         map,
@@ -63,23 +64,43 @@
         map,
         title: "Montacute House",
         });
-
-        const route = [
-        { lat: 51.002, lng: 0.543 },
-        { lat: 50.744, lng: 0.204 },
-        { lat: 50.856, lng: -0.553 },
-        { lat: 50.640, lng: -2.058 },
-        { lat: 50.953, lng: -2.713 },
-        { lat: 51.145, lng: -2.698 },
-        ];
-        const siteroute = new google.maps.Polyline({
-            path: route,
-            geodesic: true,
-            strokeColor: '#eb4034',
-            strokeOpacity: 1.0,
-            strokeWeight: 3,
+        // end of markers
+        // begingin of polyline route, pasing through each of the historic sites
+        // const route = [
+        // { lat: 51.002, lng: 0.543 },
+        // { lat: 50.744, lng: 0.204 },
+        // { lat: 50.856, lng: -0.553 },
+        // { lat: 50.640, lng: -2.058 },
+        // { lat: 50.953, lng: -2.713 },
+        // { lat: 51.145, lng: -2.698 },
+        // ];
+        // const siteroute = new google.maps.Polyline({
+        //     path: route,
+        //     geodesic: true,
+        //     strokeColor: '#eb4034',
+        //     strokeOpacity: 1.0,
+        //     strokeWeight: 3,
+        // });
+        // siteroute.setMap(map);
+        // end of polyline
+        // arrow line start
+        const lineSymbol = {
+            path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+        };
+        // Create the polyline and add the symbol via the 'icons' property.
+        const line = new google.maps.Polyline({
+            path: [
+            { lat: 51.002, lng: 0.543 },
+            { lat: 50.744, lng: 0.204 },
+            ],
+            icons: [
+            {
+                icon: lineSymbol,
+                offset: "100%",
+            },
+            ],
+            map: map,
         });
-        siteroute.setMap(map);
     }
 
     </script>
