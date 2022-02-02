@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>South England Sites</title>
+    <title>South England Historic Sites</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- <link rel="stylesheet" type="text/css" href="./style.css" /> -->
     <style>
@@ -188,27 +188,28 @@
             shouldFocus: false,
             });
         });   
-        // const BGcontentString =
-        //     '<div id="content">' +
-        //     '<div id="siteNotice">' +
-        //     "</div>" +
-        //     '<h1 id="firstHeading" class="firstHeading">Birling Gap</h1>' +
-        //     '<div id="bodyContent">' +
-        //     "<p><b>Bodium Castle</b>, words words words come back and change this later" +
-        //     "</div>" +
-        //     "</div>";
+        const BGcontentString =
+            '<div id="content">' +
+            '<div id="siteNotice">' +
+            "</div>" +
+            '<h1 id="firstHeading" class="firstHeading">Birling Gap</h1>' +
+            '<div id="bodyContent">' +
+            "<p><b>Bodium Castle</b>, words words words come back and change this later" +
+            "</div>" +
+            "</div>";
 
-        // const infowindow = new google.maps.InfoWindow({
-        //     content: BGcontentString,
-        // });
+        const infowindow = new google.maps.InfoWindow({
+            content: BGcontentString,
+        });
 
-        // BGmarker.addListener("click", () => {
-        //     infowindow.open({
-        //     anchor: BGmarker,
-        //     map,
-        //     shouldFocus: false,
-        //     });
-        // }); 
+        BGmarker.addListener("click", () => {
+            infowindow.open({
+            anchor: BGmarker,
+            map,
+            shouldFocus: false,
+            });
+        }); 
+        
         // const ACcontentString =
         //     '<div id="content">' +
         //     '<div id="siteNotice">' +
