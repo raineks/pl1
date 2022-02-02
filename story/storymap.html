@@ -25,6 +25,7 @@
             center: { lat: 51.128, lng: -1.241 },
             zoom: 9,
             // mapTypeId: 'satellite', 
+            mapTypeId: 'terrain',
         });
 
         // start historic site makers 
@@ -87,16 +88,13 @@
         const lineSymbol = {
             path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
         };
-        // Create the polyline and add the symbol via the 'icons' property.
-        const line = new google.maps.Polyline({
+
+        const BCBGline = new google.maps.Polyline({
             path: [
             { lat: 51.002, lng: 0.543 },
             { lat: 50.744, lng: 0.204 },
             ],
-            path: [
-            { lat: 50.744, lng: 0.204 },
-            { lat: 50.856, lng: -0.553 },
-            ],
+
             icons: [
             {
                 icon: lineSymbol,
@@ -106,6 +104,22 @@
             ],
             map: map,
         });
+        const BGACline = new google.maps.Polyline({
+            path: [
+            { lat: 50.744, lng: 0.204 },
+            { lat: 50.856, lng: -0.553 },
+            ],
+
+            icons: [
+            {
+                icon: lineSymbol,
+                offset: "100%",     
+                // offset 100% places arrow at the end of the line
+            },
+            ],
+            map: map,
+        });    
+        
     }
 
     </script>
