@@ -24,7 +24,7 @@
         map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: 51.128, lng: -1.241 },
             zoom: 9,
-            mapTypeId: 'satellite',
+            // mapTypeId: 'satellite', 
         });
 
         // start historic site makers 
@@ -93,10 +93,15 @@
             { lat: 51.002, lng: 0.543 },
             { lat: 50.744, lng: 0.204 },
             ],
+            path: [
+            { lat: 50.744, lng: 0.204 },
+            { lat: 50.856, lng: -0.553 },
+            ],
             icons: [
             {
                 icon: lineSymbol,
-                offset: "100%",
+                offset: "100%",     
+                // offset 100% places arrow at the end of the line
             },
             ],
             map: map,
