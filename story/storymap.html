@@ -177,17 +177,18 @@
             "</div>" +
             "</div>";
 
-        const infowindow = new google.maps.InfoWindow({
+        const BCinfowindow = new google.maps.InfoWindow({
             content: BCcontentString,
         });
 
         BCmarker.addListener("click", () => {
-            infowindow.open({
+            BCinfowindow.open({
             anchor: BCmarker,
             map,
             shouldFocus: false,
             });
-        });   
+        });  
+
         const BGcontentString =
             '<div id="content">' +
             '<div id="siteNotice">' +
@@ -198,18 +199,18 @@
             "</div>" +
             "</div>";
 
-        const infowindow = new google.maps.InfoWindow({
+        const BGinfowindow = new google.maps.InfoWindow({
             content: BGcontentString,
         });
 
         BGmarker.addListener("click", () => {
-            infowindow.open({
+            BGinfowindow.open({
             anchor: BGmarker,
             map,
             shouldFocus: false,
             });
         }); 
-        
+
         // const ACcontentString =
         //     '<div id="content">' +
         //     '<div id="siteNotice">' +
