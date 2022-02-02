@@ -19,10 +19,20 @@
 
         #maptitle {
         position: absolute;
-        top: 20px;
-        left: 20px;
+        top: 50px;
+        left: 70px;
         z-index: 5;
-        background-color: rgba(137, 151, 150, 0.4);
+        background-color: rgba(137, 151, 150, 0.6);
+        border-radius: 8px;
+        padding: 10px 10px 10px 10px;
+        }
+        #words {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        z-index: 5;
+        background-color: rgba(137, 151, 150, 0.6);
+        border-radius: 8px;
         padding: 10px 10px 10px 10px;
         }
 
@@ -311,6 +321,10 @@
   </head>
   <body>
     <div id="maptitle"> <h1>South England Historic Site Road Trip</h1></div> 
+    <div id="words">
+        <p>This map shows the route of the last time I visited my family in England, my mum and I started at our families caravan east of Eastborne, stopping at National Trust and English Heratige Sites along our way to my grandparents home in Yeovil.</p>
+        <p>Click on each of the sites to learn a little about these historic places! </p>
+    </div>
     <div id="map"></div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
