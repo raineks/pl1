@@ -23,8 +23,8 @@
         function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: 51.002, lng: 0.543 },
-            zoom: 13,
-            mapTypeID: 'satellite',
+            zoom: 6,
+            mapTypeId: 'satellite',
         });
 
         const BCmarker = new google.maps.Marker({
@@ -37,11 +37,11 @@
         map,
         title: "Birling Gap",
         });
-        const BPPmarker = new google.maps.Marker({
-        position: { lat: 50.817, lng: -0.136 },
-        map,
-        title: "Brighton Palace Pier",
-        });
+        // const BPPmarker = new google.maps.Marker({
+        // position: { lat: 50.817, lng: -0.136 },
+        // map,
+        // title: "Brighton Palace Pier",
+        // });
         const ACmarker = new google.maps.Marker({
         position: { lat: 50.856, lng: -0.553 },
         map,
