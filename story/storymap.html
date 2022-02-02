@@ -24,7 +24,7 @@
         map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: 51.002, lng: 0.543 },
             zoom: 13,
-            mapTypeID: "satellite",
+            mapTypeID: 'satellite',
         });
 
         const BCmarker = new google.maps.Marker({
@@ -36,6 +36,26 @@
         position: { lat: 50.744, lng: 0.204 },
         map,
         title: "Birling Gap",
+        });
+        const BPPmarker = new google.maps.Marker({
+        position: { lat: 50.817, lng: -0.136 },
+        map,
+        title: "Brighton Palace Pier",
+        });
+        const ACmarker = new google.maps.Marker({
+        position: { lat: 50.856, lng: -0.553 },
+        map,
+        title: "Arundel Castle",
+        });
+        const GTORmarker = new google.maps.Marker({
+        position: { lat: 51.145, lng: -2.698 },
+        map,
+        title: "Glastonbury Tor",
+        });
+        const CCmarker = new google.maps.Marker({
+        position: { lat: 50.640, lng: -2.058 },
+        map,
+        title: "Corfe Castle",
         });
 
         }
