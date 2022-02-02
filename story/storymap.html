@@ -119,7 +119,51 @@
             ],
             map: map,
         });    
-        
+        const ACCCline = new google.maps.Polyline({
+            path: [
+            { lat: 50.856, lng: -0.553 },
+            { lat: 50.640, lng: -2.058 },
+            ],
+
+            icons: [
+            {
+                icon: lineSymbol,
+                offset: "100%",     
+                // offset 100% places arrow at the end of the line
+            },
+            ],
+            map: map,
+        });  
+        const CCMCline = new google.maps.Polyline({
+            path: [
+            { lat: 50.640, lng: -2.058 },
+            { lat: 50.953, lng: -2.713 },
+            ],
+
+            icons: [
+            {
+                icon: lineSymbol,
+                offset: "100%",     
+                // offset 100% places arrow at the end of the line
+            },
+            ],
+            map: map,
+        }); 
+        const MCGTORline = new google.maps.Polyline({
+            path: [
+            { lat: 50.953, lng: -2.713 },
+            { lat: 51.145, lng: -2.698 },
+            ],
+
+            icons: [
+            {
+                icon: lineSymbol,
+                offset: "100%",     
+                // offset 100% places arrow at the end of the line
+            },
+            ],
+            map: map,
+        });     
     }
 
     </script>
