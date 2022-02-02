@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>South England Sites</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- <link rel="stylesheet" type="text/css" href="./style.css" /> -->
     <style>
@@ -26,7 +26,20 @@
             zoom: 13,
             mapTypeID: "satellite",
         });
+
+        const BCmarker = new google.maps.Marker({
+        position: { lat: 51.002, lng: 0.543 },
+        map,
+        title: "Bodium Castle",
+        });
+        const BGmarker = new google.maps.Marker({
+        position: { lat: 50.744, lng: 0.204 },
+        map,
+        title: "Birling Gap",
+        });
+
         }
+
     </script>
   </head>
   <body>
